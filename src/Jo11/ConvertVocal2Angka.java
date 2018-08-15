@@ -51,7 +51,19 @@ public class ConvertVocal2Angka {
         }
     } 
     
+    private static void tampilHasil(String convert) 
+    {
+        System.out.println("Kalimat Alay Angka : " + convert);
     }
+    public static void main(String[]args)
+    {
+        String identitas = "Bhisma Yudha Saputra/ X RPL #/ 10";
+        tampilJudul(identitas);
+        String kalimat = tampilInput();
+        String convert = vocal2angka(kalimat);
+        tampilPerKata(kalimat, convert); 
+        tampilHasil(convert);
+    }}
     
     
     
